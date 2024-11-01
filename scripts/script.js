@@ -23,3 +23,24 @@ menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x')
     navbar.classList.toggle('active')
 }
+
+function sendwhatsapp(){
+    var phonenumber = "3023721517";
+
+    var name = document.querySelector('.name').value;
+    var email = document.querySelector('.email').value;
+    var number = document.querySelector('.number').value;
+    var subject = document.querySelector('.subject').value;
+    var coments = document.querySelector('.coments').value;
+
+    var url = "https://wa.me/" + phonenumber + "?text="
+    +"Name: * " + name + "%0a" 
+    +"email: * " + email + "%0a" 
+    +"number: * " + number + "%0a" 
+    +"subject: * " + subject + "%0a" 
+    +"coments: * " + coments + "%0a"
+    + "Estos es un ejemplo de un mensaje enviado por whattsapp"
+
+    window.open(url, '_black').focus();
+
+}
