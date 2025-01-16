@@ -39,7 +39,6 @@ function sendwhatsapp(){
     +"number: * " + number + "%0a" 
     +"subject: * " + subject + "%0a" 
     +"coments: * " + coments + "%0a"
-    + "Estos es un ejemplo de un mensaje enviado por whattsapp"
 
     window.open(url, '_black').focus();
 
